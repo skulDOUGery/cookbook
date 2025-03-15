@@ -1,0 +1,79 @@
+@startuml "stm32l4xx-hal Dependencies"
+
+node "atty"
+node "bare-metal"
+node "bitflags"
+node "bxcan"
+node "cast"
+node "clap"
+node "cortex-m"
+node "criterion"
+node "embedded-dma"
+node "embedded-hal"
+node "fugit"
+node "gcd"
+node "nb"
+node "rand"
+node "rand-core"
+node "rustc_version"
+node "semver"
+node "semver-parser"
+node "stable_deref_trait"
+node "stm32l4"
+node "stm32l4xx-hal"
+node "stm32-usbd"
+node "synopsis-usb-otg"
+node "vcell"
+node "void"
+
+"bxcan" <.. "stm32l4xx-hal"
+"cast" <.. "stm32l4xx-hal"
+"cortex-m" <.. "stm32l4xx-hal"
+"embedded-dma" <.. "stm32l4xx-hal"
+"embedded-hal" <.. "stm32l4xx-hal"
+"fugit" <.. "stm32l4xx-hal"
+"nb" <.. "stm32l4xx-hal"
+"rand-core" <.. "stm32l4xx-hal"
+"stable_deref_trait" <.. "stm32l4xx-hal"
+"stm32l4" <.. "stm32l4xx-hal"
+"void" <.. "stm32l4xx-hal"
+"stm32-usbd" <.. "stm32l4xx-hal"
+"synopsis-usb-otg" <.. "stm32l4xx-hal"
+
+"bare-metal" <.. "stm32l4"
+"cortex-m" <.. "stm32l4"
+"vcell" <.. "stm32l4"
+
+"bare-metal" <.. "cortex-m"
+"embedded-hal" <.. "cortex-m"
+
+"rustc_version" <.. "bare-metal"
+
+"semver" <.. "rustc_version"
+
+"semver-parser" <.. "semver"
+
+"nb" <.. "embedded-hal"
+"void" <.. "embedded-hal"
+
+"vcell" <.. "volatile-register"
+
+"bitflags" <.. "bxcan"
+"nb" <.. "bxcan"
+"vcell" <.. "bxcan"
+
+"rustc_version" <.. "cast"
+
+"stable_deref_trait" <.. "embedded-dma"
+
+"gcd" <.. "fugit"
+
+"criterion" <.. "gcd"
+"rand" <.. "gcd"
+
+"atty" <.. "criterion"
+"cast" <.. "criterion"
+"clap" <.. "criterion"
+"criterion-plot" <.. "criterion"
+
+@enduml

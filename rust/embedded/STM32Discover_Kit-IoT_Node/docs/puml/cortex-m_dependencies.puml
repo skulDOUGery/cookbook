@@ -1,0 +1,29 @@
+@startuml "stm32l4xx-hal Dependencies"
+
+node "bare-metal"
+node "bitfield"
+node "cortex-m"
+node "embedded-hal"
+node "nb"
+node "rustc_version"
+node "semver"
+node "semver-parser"
+node "vcell"
+node "volatile-register"
+
+"bare-metal" <.. "cortex-m"
+"bitfield" <.. "cortex-m"
+"embedded-hal" <.. "cortex-m"
+"volatile-register" <.. "cortex-m"
+
+"rustc_version" <.. "bare-metal"
+
+"semver" <.. "rustc_version"
+
+"semver-parser" <.. "semver"
+
+"nb" <.. "embedded-hal"
+
+"vcell" <.. "volatile-register"
+
+@enduml
