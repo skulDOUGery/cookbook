@@ -1,3 +1,0 @@
-/home/doug/projects/cookbook/c-cpp/XMacros/project-1/build/CMakeFiles/Hello.dir
-/home/doug/projects/cookbook/c-cpp/XMacros/project-1/build/CMakeFiles/edit_cache.dir
-/home/doug/projects/cookbook/c-cpp/XMacros/project-1/build/CMakeFiles/rebuild_cache.dir
