@@ -1,0 +1,3 @@
+/home/doug/projects/CMake/Chapter_01/01-hello/buildtree/CMakeFiles/Hello.dir
+/home/doug/projects/CMake/Chapter_01/01-hello/buildtree/CMakeFiles/edit_cache.dir
+/home/doug/projects/CMake/Chapter_01/01-hello/buildtree/CMakeFiles/rebuild_cache.dir
